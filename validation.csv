@@ -1,0 +1,7 @@
+check_id,area,target,method,tolerance,measured,result,action
+VAL-001,Scale length,"328 mm / 12.91 in vibrating length","measure nut to bridge","+/- 1 mm",TBD,TBD,"Reset bridge/nut position"
+VAL-002,String tension,"within selected set published range","manufacturer chart","within published range",TBD,TBD,"Change string set"
+VAL-003,Neck projection,"setup-compatible bridge height","straightedge to bridge line","target TBD",TBD,TBD,"Reset neck or bridge plan"
+VAL-004,Action,"playable G/E string height","measure at fingerboard end","target TBD",TBD,TBD,"Adjust bridge/fingerboard"
+VAL-005,Bridge fit,"full foot contact on top","visual light-gap check","no visible gap",TBD,TBD,"Refit bridge"
+VAL-006,Soundpost fit,"stable post without crushing top/back","inspection and tone test","no slipping/buzzing",TBD,TBD,"Refit/reposition"

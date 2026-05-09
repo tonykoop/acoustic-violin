@@ -1,0 +1,12 @@
+item,qty,unit,material_or_spec,estimated_cost_usd,notes
+Top plate,1,ea,"spruce violin top blank or prototype plate",90,"Graduation TBD"
+Back plate,1,ea,"maple back blank or prototype plate",110,"One-piece or two-piece"
+Rib/lining/block stock,1,set,"maple ribs, spruce blocks/linings",45,"Bending method TBD"
+Neck blank,1,ea,"maple violin neck blank",55,"Scroll detail optional for prototype"
+Fingerboard,1,ea,"ebony or composite violin fingerboard",35,"Final scoop/setup TBD"
+Bridge blank,1,ea,"violin bridge blank",12,"Must be fitted to top"
+Soundpost,1,ea,"spruce soundpost stock",5,"Fit and position are validation items"
+Tailpiece/chinrest/endpin,1,set,"standard violin fittings",45,"Compatibility TBD"
+Pegs or tuners,4,ea,"violin pegs or geared pegs",35,"Pegbox geometry must match"
+String set,1,set,"standard violin G-D-A-E set with published tension",45,"Tension evidence required"
+Finish/adhesive,1,lot,"hide glue or prototype adhesive; varnish system TBD",45,"Traditional methods TBD"

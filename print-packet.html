@@ -1,0 +1,327 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Acoustic Violin Build Packet</title><style>
+body { font-family: Arial, sans-serif; color: #111; line-height: 1.35; max-width: 900px; margin: 32px auto; }
+h1 { font-size: 28px; border-bottom: 2px solid #222; padding-bottom: 6px; }
+h2 { font-size: 22px; margin-top: 28px; }
+h3 { font-size: 18px; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0 20px; font-size: 12px; }
+th, td { border: 1px solid #888; padding: 6px; vertical-align: top; }
+th { background: #e8eef8; }
+pre { white-space: pre-wrap; background: #f5f5f5; padding: 10px; border: 1px solid #ddd; }
+.page-break { page-break-before: always; break-before: page; }
+@media print { body { margin: 0.5in; max-width: none; } a { color: #111; } }
+</style></head><body>
+<h1>Acoustic Violin Build Packet Print Packet</h1>
+
+<p>Generated: 2026-05-09</p>
+<p>Packet folder: `/tmp/acoustic-violin-codex-gina-r2-build-packet`</p>
+
+<h2>File Map</h2>
+
+<table>
+<tr><th>File</th><th>Purpose</th></tr>
+<tr><td>`design.md`</td><td>Project intent, catalog metadata, assumptions, and validation plan.</td></tr>
+<tr><td>`bom.csv`</td><td>Starter bill of materials with part categories, quantities, drawing refs, and notes.</td></tr>
+<tr><td>`sourcing.csv`</td><td>Supplier/search tracker with specs, price/date fields, lead time, substitutes, and risks.</td></tr>
+<tr><td>`cut-list.csv`</td><td>Rough/final stock sizes, material, grain/orientation, operations, yield, and offcuts.</td></tr>
+<tr><td>`drawing-brief.md`</td><td>Manufacturing drawing and technical product sketch brief.</td></tr>
+<tr><td>`assembly-manual.md`</td><td>Shop-facing sequence, tools, fixtures, safety, tuning, finishing, and maintenance notes.</td></tr>
+<tr><td>`validation.csv`</td><td>Target/measured values, tolerance, environment, result, and tuning/build action log.</td></tr>
+<tr><td>`supplier-rfq.md`</td><td>Supplier email/request-for-quote starter.</td></tr>
+<tr><td>`visual-bom-brief.md`</td><td>Art direction for an image-forward visual BOM.</td></tr>
+<tr><td>`wolfram-starter.wl`</td><td>Wolfram starter for physics, optimization, visualization, and validation.</td></tr>
+<tr><td>`README.md`</td><td>Project artifact.</td></tr>
+<tr><td>`photo-shotlist.md`</td><td>Project artifact.</td></tr>
+<tr><td>`risks.md`</td><td>Project artifact.</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>design.md</h2>
+
+<p>Project intent, catalog metadata, assumptions, and validation plan.</p>
+
+<h1>Acoustic Violin Design</h1>
+
+<h2>Intent</h2>
+
+<p>Create an honest L2 acoustic violin packet that captures the standard setup</p>
+<p>geometry and the open engineering gaps before any claim of build readiness.</p>
+
+<h2>Readiness</h2>
+
+<p>L2 scaffold. Use for design review, drawing planning, and sourcing review. Do</p>
+<p>not treat this as a final luthiery method or validated arching plan.</p>
+
+<h2>Governing Model</h2>
+
+<p>Open strings use Mersenne-Taylor. Body response is not reduced to a simple</p>
+<p>closed-form model in this packet; arching, graduation, bridge, soundpost, and</p>
+<p>air/body modes must be validated empirically.</p>
+
+<pre><code>
+f = (1 / (2 L)) * sqrt(T / mu)
+</code></pre>
+
+<h2>Baseline Assumptions</h2>
+
+<table>
+<tr><th>Parameter</th><th>Baseline</th><th>Notes</th></tr>
+<tr><td>Scale length</td><td>328 mm / 12.91 in</td><td>Standard violin vibrating length</td></tr>
+<tr><td>Tuning</td><td>G3-D4-A4-E5</td><td>A4 = 440 Hz reference</td></tr>
+<tr><td>String set</td><td>Standard 4-string violin set</td><td>Use published tensions</td></tr>
+<tr><td>Body length</td><td>about 14 in / 356 mm</td><td>Exact outline TBD from drawing</td></tr>
+<tr><td>Top/back</td><td>Spruce top, maple back</td><td>Graduation not finalized</td></tr>
+<tr><td>Neck angle/projection</td><td>TBD from setup drawing</td><td>Critical to bridge height/action</td></tr>
+<tr><td>Target total tension</td><td>about 45-55 lbf</td><td>Verify with selected string set</td></tr>
+</table>
+
+<h2>Tension And Setup Notes</h2>
+
+<ul>
+<li>Fit bridge and soundpost under low tension, then bring strings up gradually.</li>
+<li>Check neck projection before final bridge height.</li>
+<li>Record action, bridge foot fit, soundpost location, and open-string pitch</li>
+</ul>
+<p>  stability.</p>
+
+<h2>Known Gaps</h2>
+
+<ul>
+<li>No arching/graduation map.</li>
+<li>No neck-set drawing.</li>
+<li>No soundpost/bridge fitting evidence.</li>
+<li>No live sourceability check.</li>
+<li>No acoustic measurements.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2>bom.csv</h2>
+
+<p>Starter bill of materials with part categories, quantities, drawing refs, and notes.</p>
+
+<table>
+<tr><th>item</th><th>qty</th><th>unit</th><th>material_or_spec</th><th>estimated_cost_usd</th><th>notes</th></tr>
+<tr><td>Top plate</td><td>1</td><td>ea</td><td>spruce violin top blank or prototype plate</td><td>90</td><td>Graduation TBD</td></tr>
+<tr><td>Back plate</td><td>1</td><td>ea</td><td>maple back blank or prototype plate</td><td>110</td><td>One-piece or two-piece</td></tr>
+<tr><td>Rib/lining/block stock</td><td>1</td><td>set</td><td>maple ribs, spruce blocks/linings</td><td>45</td><td>Bending method TBD</td></tr>
+<tr><td>Neck blank</td><td>1</td><td>ea</td><td>maple violin neck blank</td><td>55</td><td>Scroll detail optional for prototype</td></tr>
+<tr><td>Fingerboard</td><td>1</td><td>ea</td><td>ebony or composite violin fingerboard</td><td>35</td><td>Final scoop/setup TBD</td></tr>
+<tr><td>Bridge blank</td><td>1</td><td>ea</td><td>violin bridge blank</td><td>12</td><td>Must be fitted to top</td></tr>
+<tr><td>Soundpost</td><td>1</td><td>ea</td><td>spruce soundpost stock</td><td>5</td><td>Fit and position are validation items</td></tr>
+<tr><td>Tailpiece/chinrest/endpin</td><td>1</td><td>set</td><td>standard violin fittings</td><td>45</td><td>Compatibility TBD</td></tr>
+<tr><td>Pegs or tuners</td><td>4</td><td>ea</td><td>violin pegs or geared pegs</td><td>35</td><td>Pegbox geometry must match</td></tr>
+<tr><td>String set</td><td>1</td><td>set</td><td>standard violin G-D-A-E set with published tension</td><td>45</td><td>Tension evidence required</td></tr>
+<tr><td>Finish/adhesive</td><td>1</td><td>lot</td><td>hide glue or prototype adhesive; varnish system TBD</td><td>45</td><td>Traditional methods TBD</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>sourcing.csv</h2>
+
+<p>Supplier/search tracker with specs, price/date fields, lead time, substitutes, and risks.</p>
+
+<table>
+<tr><th>item</th><th>required_spec</th><th>search_terms</th><th>supplier_candidates</th><th>date_checked</th><th>unit_price_usd</th><th>lead_time</th><th>substitution_risk</th><th>notes</th></tr>
+<tr><td>Violin strings</td><td>4/4 violin set with published tensions</td><td>4/4 violin strings tension chart</td><td>string manufacturers; music suppliers</td><td>TBD</td><td>TBD</td><td>TBD</td><td>Low</td><td>Use actual tension values</td></tr>
+<tr><td>Bridge blank</td><td>4/4 violin bridge blank</td><td>violin bridge blank 4/4</td><td>luthier suppliers</td><td>TBD</td><td>TBD</td><td>TBD</td><td>Low</td><td>Quality affects setup</td></tr>
+<tr><td>Soundpost stock</td><td>straight spruce soundpost dowel</td><td>violin soundpost stock spruce</td><td>luthier suppliers</td><td>TBD</td><td>TBD</td><td>TBD</td><td>Low</td><td>Fit is more important than cost</td></tr>
+<tr><td>Tonewood plates</td><td>spruce top and maple back suitable for violin</td><td>violin tonewood spruce top maple back</td><td>luthier tonewood suppliers</td><td>TBD</td><td>TBD</td><td>TBD</td><td>Medium</td><td>Prototype may use lower grade</td></tr>
+<tr><td>Fittings</td><td>tailpiece, chinrest, endpin, pegs/geared pegs</td><td>violin fittings set 4/4</td><td>luthier suppliers; music suppliers</td><td>TBD</td><td>TBD</td><td>TBD</td><td>Medium</td><td>Peg/tuner choice affects pegbox</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>cut-list.csv</h2>
+
+<p>Rough/final stock sizes, material, grain/orientation, operations, yield, and offcuts.</p>
+
+<table>
+<tr><th>part</th><th>qty</th><th>rough_dimensions_in</th><th>final_dimensions_in</th><th>material</th><th>grain_or_orientation</th><th>operation</th><th>notes</th><th></th></tr>
+<tr><td>Top plate</td><td>1</td><td>0.75 x 8.5 x 15.0</td><td>arched/graduated TBD</td><td>spruce</td><td>quarter-sawn centerline</td><td>join, carve/CNC, graduate</td><td>Arching map required</td><td></td></tr>
+<tr><td>Back plate</td><td>1</td><td>0.75 x 8.5 x 15.0</td><td>arched/graduated TBD</td><td>maple</td><td>quarter-sawn centerline</td><td>join, carve/CNC, graduate</td><td>Graduation TBD</td><td></td></tr>
+<tr><td>Ribs</td><td>6</td><td>0.060 x 1.5 x variable</td><td>profile TBD</td><td>maple</td><td>long grain lengthwise</td><td>bend or laminate</td><td>Mold required</td><td></td></tr>
+<tr><td>Blocks/linings</td><td>1</td><td>set</td><td>TBD</td><td>TBD</td><td>spruce/willow/lining stock</td><td>stable</td><td>shape and glue</td><td>Corner block plan TBD</td></tr>
+<tr><td>Neck</td><td>1</td><td>2.0 x 2.5 x 11.0</td><td>violin neck profile TBD</td><td>maple</td><td>quarter grain preferred</td><td>saw, carve, fit</td><td>Projection critical</td><td></td></tr>
+<tr><td>Fingerboard</td><td>1</td><td>0.35 x 1.75 x 11.0</td><td>scoop/profile TBD</td><td>ebony/composite</td><td>long grain</td><td>plane and fit</td><td>Final setup after neck set</td><td></td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>drawing-brief.md</h2>
+
+<p>Manufacturing drawing and technical product sketch brief.</p>
+
+<h1>Acoustic Violin Drawing Brief</h1>
+
+<p>Required first drawings:</p>
+
+<ul>
+<li>Full outline with centerline, f-hole placeholders, bridge line, and stop.</li>
+<li>Side setup drawing with nut, fingerboard projection, bridge, and tailpiece.</li>
+<li>Plate arching/graduation placeholder map with TBDs visible.</li>
+<li>Rib garland and block layout.</li>
+<li>Neck/pegbox/fingerboard interface detail.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2>assembly-manual.md</h2>
+
+<p>Shop-facing sequence, tools, fixtures, safety, tuning, finishing, and maintenance notes.</p>
+
+<h1>Acoustic Violin Assembly Manual</h1>
+
+<p>1. Choose the outline, arching, and graduation references before cutting.</p>
+<p>2. Prepare plates, ribs, blocks, linings, neck, and fingerboard.</p>
+<p>3. Build the rib garland on a mold or documented fixture.</p>
+<p>4. Carve or CNC rough plates, then hand-finish critical arching and graduation.</p>
+<p>5. Close the body with reversible or documented adhesive.</p>
+<p>6. Fit neck angle/projection before final fingerboard work.</p>
+<p>7. Fit pegs/tuners, nut, bridge, soundpost, tailpiece, and strings.</p>
+<p>8. Bring strings to pitch gradually and log setup measurements.</p>
+
+<p>Safety: string and bridge forces are lower than a harp but still require eye</p>
+<p>protection and careful first pitch-up.</p>
+
+<div class="page-break"></div>
+
+<h2>validation.csv</h2>
+
+<p>Target/measured values, tolerance, environment, result, and tuning/build action log.</p>
+
+<table>
+<tr><th>check_id</th><th>area</th><th>target</th><th>method</th><th>tolerance</th><th>measured</th><th>result</th><th>action</th></tr>
+<tr><td>VAL-001</td><td>Scale length</td><td>328 mm / 12.91 in vibrating length</td><td>measure nut to bridge</td><td>+/- 1 mm</td><td>TBD</td><td>TBD</td><td>Reset bridge/nut position</td></tr>
+<tr><td>VAL-002</td><td>String tension</td><td>within selected set published range</td><td>manufacturer chart</td><td>within published range</td><td>TBD</td><td>TBD</td><td>Change string set</td></tr>
+<tr><td>VAL-003</td><td>Neck projection</td><td>setup-compatible bridge height</td><td>straightedge to bridge line</td><td>target TBD</td><td>TBD</td><td>TBD</td><td>Reset neck or bridge plan</td></tr>
+<tr><td>VAL-004</td><td>Action</td><td>playable G/E string height</td><td>measure at fingerboard end</td><td>target TBD</td><td>TBD</td><td>TBD</td><td>Adjust bridge/fingerboard</td></tr>
+<tr><td>VAL-005</td><td>Bridge fit</td><td>full foot contact on top</td><td>visual light-gap check</td><td>no visible gap</td><td>TBD</td><td>TBD</td><td>Refit bridge</td></tr>
+<tr><td>VAL-006</td><td>Soundpost fit</td><td>stable post without crushing top/back</td><td>inspection and tone test</td><td>no slipping/buzzing</td><td>TBD</td><td>TBD</td><td>Refit/reposition</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>supplier-rfq.md</h2>
+
+<p>Supplier email/request-for-quote starter.</p>
+
+<h1>Supplier RFQ Draft</h1>
+
+<p>Hello,</p>
+
+<p>Please quote materials for a 4/4 acoustic violin prototype: spruce top blank,</p>
+<p>maple back/neck/rib stock, bridge blank, soundpost stock, standard fittings,</p>
+<p>and a 4-string set with published tension data.</p>
+
+<p>Please include dimensions, grade, unit price, minimum order quantity, lead time,</p>
+<p>and substitution options.</p>
+
+<div class="page-break"></div>
+
+<h2>visual-bom-brief.md</h2>
+
+<p>Art direction for an image-forward visual BOM.</p>
+
+<h1>Visual BOM Brief</h1>
+
+<p>Show the violin as assembled and as an exploded plate/rib/neck/fittings view.</p>
+<p>Call out top, back, ribs, blocks, linings, neck, fingerboard, bridge, soundpost,</p>
+<p>tailpiece, chinrest, pegs/tuners, strings, adhesive, and finish.</p>
+
+<div class="page-break"></div>
+
+<h2>wolfram-starter.wl</h2>
+
+<p>Wolfram starter for physics, optimization, visualization, and validation.</p>
+
+<pre><code>
+(* Acoustic violin open-string starter. Values are first-pass assumptions. *)
+ClearAll[&quot;Global`*&quot;];
+a4 = 440;
+freqFromMidi[m_] := a4*2^((m - 69)/12);
+scaleLengthIn = 12.91;
+tuning = &lt;|&quot;G3&quot; -&gt; 55, &quot;D4&quot; -&gt; 62, &quot;A4&quot; -&gt; 69, &quot;E5&quot; -&gt; 76|&gt;;
+
+Dataset[
+  KeyValueMap[
+    &lt;|&quot;string&quot; -&gt; #1, &quot;frequencyHz&quot; -&gt; N[freqFromMidi[#2]],
+      &quot;scaleLengthIn&quot; -&gt; scaleLengthIn|&gt; &amp;,
+    tuning
+  ]
+]
+</code></pre>
+
+<div class="page-break"></div>
+
+<h2>README.md</h2>
+
+<p>Project artifact.</p>
+
+<h1>Acoustic Violin</h1>
+
+<p>Engineering documentation and parametric design table for the acoustic violin -</p>
+<p>traditional construction reference and stave-built explorations.</p>
+
+<p>Part of the [tonykoop/instrument-maker](https://github.com/tonykoop/instrument-maker) catalogue.</p>
+
+<h2>Readiness</h2>
+
+<p>L2 scaffold. This repo now includes root-mode build packet documentation for a</p>
+<p>4-string acoustic violin reference build. It is not L3 because arching,</p>
+<p>graduation, neck-set, soundpost, bridge setup, CAD/render evidence, and measured</p>
+<p>prototype validation are not complete.</p>
+
+<h2>Packet Contents</h2>
+
+<ul>
+<li>`design.md` - acoustic violin baseline and bowed-string assumptions.</li>
+<li>`bom.csv`, `sourcing.csv`, `cut-list.csv`, `validation.csv` - packet tables.</li>
+<li>`assembly-manual.md`, `risks.md`, `photo-shotlist.md` - build and review aids.</li>
+<li>`drawing-brief.md`, `drawings/README.md`, `cad/README.md`,</li>
+</ul>
+<p>  `wolfram-starter.wl`, `wolfram/README.md` - starter technical artifacts.</p>
+
+<h2>String-Scale Assumptions</h2>
+
+<p>Baseline: 4 strings, G3-D4-A4-E5, 328 mm / 12.91 in vibrating length, standard</p>
+<p>violin string set, and total tension verified against the manufacturer chart</p>
+<p>before first pitch-up.</p>
+
+<h2>License</h2>
+
+<p>[CC BY 4.0](LICENSE) - see LICENSE for details.</p>
+
+<div class="page-break"></div>
+
+<h2>photo-shotlist.md</h2>
+
+<p>Project artifact.</p>
+
+<h1>Photo Shotlist</h1>
+
+<ul>
+<li>Plate blanks with grain orientation.</li>
+<li>Rib mold or garland setup.</li>
+<li>Arching/graduation checks.</li>
+<li>Neck projection straightedge before glue.</li>
+<li>Bridge foot fit and soundpost fit.</li>
+<li>First string-up with action and tuner readings.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2>risks.md</h2>
+
+<p>Project artifact.</p>
+
+<h1>Acoustic Violin Risks</h1>
+
+<ul>
+<li>Arching and graduation are not validated and can dominate tone and structure.</li>
+<li>Neck projection errors can make the instrument unplayable.</li>
+<li>Soundpost and bridge fitting require care; poor fit can damage the top.</li>
+<li>Live sourcing and price checks are still missing.</li>
+<li>Remain at L2 until setup, CAD, and measured acoustic evidence exist.</li>
+</ul>
+</body></html>
