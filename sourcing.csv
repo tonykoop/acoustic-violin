@@ -1,0 +1,6 @@
+item,required_spec,search_terms,supplier_candidates,date_checked,unit_price_usd,lead_time,substitution_risk,notes
+Violin strings,"4/4 violin set with published tensions","4/4 violin strings tension chart","string manufacturers; music suppliers",TBD,TBD,TBD,Low,"Use actual tension values"
+Bridge blank,"4/4 violin bridge blank","violin bridge blank 4/4","luthier suppliers",TBD,TBD,TBD,Low,"Quality affects setup"
+Soundpost stock,"straight spruce soundpost dowel","violin soundpost stock spruce","luthier suppliers",TBD,TBD,TBD,Low,"Fit is more important than cost"
+Tonewood plates,"spruce top and maple back suitable for violin","violin tonewood spruce top maple back","luthier tonewood suppliers",TBD,TBD,TBD,Medium,"Prototype may use lower grade"
+Fittings,"tailpiece, chinrest, endpin, pegs/geared pegs","violin fittings set 4/4","luthier suppliers; music suppliers",TBD,TBD,TBD,Medium,"Peg/tuner choice affects pegbox"
