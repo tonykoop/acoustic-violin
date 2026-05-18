@@ -1,7 +1,7 @@
 # Acoustic Violin Build Packet Print Packet
 
 Generated: 2026-05-09
-Packet folder: `/tmp/acoustic-violin-codex-gina-r2-build-packet`
+Packet folder: repo root (`.`)
 
 ## File Map
 

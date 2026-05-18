@@ -14,6 +14,7 @@ prototype validation are not complete.
 
 ## Packet Contents
 
+- `explorer.html` - studio-facing packet digest generated from the root packet.
 - `design.md` - acoustic violin baseline and bowed-string assumptions.
 - `bom.csv`, `sourcing.csv`, `cut-list.csv`, `validation.csv` - packet tables.
 - `assembly-manual.md`, `risks.md`, `photo-shotlist.md` - build and review aids.

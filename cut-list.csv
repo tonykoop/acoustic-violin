@@ -2,6 +2,6 @@ part,qty,rough_dimensions_in,final_dimensions_in,material,grain_or_orientation,o
 Top plate,1,"0.75 x 8.5 x 15.0","arched/graduated TBD","spruce","quarter-sawn centerline","join, carve/CNC, graduate","Arching map required"
 Back plate,1,"0.75 x 8.5 x 15.0","arched/graduated TBD","maple","quarter-sawn centerline","join, carve/CNC, graduate","Graduation TBD"
 Ribs,6,"0.060 x 1.5 x variable","profile TBD","maple","long grain lengthwise","bend or laminate","Mold required"
-Blocks/linings,1,set,"TBD","TBD","spruce/willow/lining stock","stable","shape and glue","Corner block plan TBD"
+Blocks/linings,1,"set TBD","TBD","spruce/willow/lining stock","stable","shape and glue","Corner block plan TBD"
 Neck,1,"2.0 x 2.5 x 11.0","violin neck profile TBD","maple","quarter grain preferred","saw, carve, fit","Projection critical"
 Fingerboard,1,"0.35 x 1.75 x 11.0","scoop/profile TBD","ebony/composite","long grain","plane and fit","Final setup after neck set"
