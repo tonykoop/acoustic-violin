@@ -17,9 +17,15 @@ prototype validation are not complete.
 - `explorer.html` - studio-facing packet digest generated from the root packet.
 - `design.md` - acoustic violin baseline and bowed-string assumptions.
 - `bom.csv`, `sourcing.csv`, `cut-list.csv`, `validation.csv` - packet tables.
+- `family-spec.csv` - L2 SolidWorks family-spec scaffold from the
+  instrument-maker-v4 template. Placeholder values; replace with packet
+  design-sheet values before SolidWorks import.
 - `assembly-manual.md`, `risks.md`, `photo-shotlist.md` - build and review aids.
 - `drawing-brief.md`, `drawings/README.md`, `cad/README.md`,
   `wolfram-starter.wl`, `wolfram/README.md` - starter technical artifacts.
+- `cnc/README.md`, `images/README.md`, `data/README.md` - placeholder folders
+  for future toolpaths, shop photos, and measured prototype data. Empty by
+  design until a build is underway.
 
 ## String-Scale Assumptions
 
