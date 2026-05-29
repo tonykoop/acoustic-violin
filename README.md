@@ -5,6 +5,8 @@ traditional construction reference and stave-built explorations.
 
 Part of the [tonykoop/instrument-maker](https://github.com/tonykoop/instrument-maker) catalogue.
 
+**Status: L2 V5 build-packet candidate**
+
 ## Readiness
 
 L2 scaffold. This repo now includes root-mode build packet documentation for a
