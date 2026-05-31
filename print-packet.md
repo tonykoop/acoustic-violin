@@ -16,7 +16,7 @@ Packet folder: repo root (`.`)
 | `validation.csv` | Target/measured values, tolerance, environment, result, and tuning/build action log. |
 | `supplier-rfq.md` | Supplier email/request-for-quote starter. |
 | `visual-bom-brief.md` | Art direction for an image-forward visual BOM. |
-| `wolfram-starter.wl` | Wolfram starter for physics, optimization, visualization, and validation. |
+| `acoustic-violin-starter.wl` | Wolfram starter for physics, optimization, visualization, and validation. |
 | `README.md` | Project artifact. |
 | `photo-shotlist.md` | Project artifact. |
 | `risks.md` | Project artifact. |
@@ -207,7 +207,7 @@ tailpiece, chinrest, pegs/tuners, strings, adhesive, and finish.
 
 <div class="page-break"></div>
 
-## wolfram-starter.wl
+## acoustic-violin-starter.wl
 
 Wolfram starter for physics, optimization, visualization, and validation.
 
@@ -254,7 +254,7 @@ prototype validation are not complete.
 - `bom.csv`, `sourcing.csv`, `cut-list.csv`, `validation.csv` - packet tables.
 - `assembly-manual.md`, `risks.md`, `photo-shotlist.md` - build and review aids.
 - `drawing-brief.md`, `drawings/README.md`, `cad/README.md`,
-  `wolfram-starter.wl`, `wolfram/README.md` - starter technical artifacts.
+  `acoustic-violin-starter.wl`, `wolfram/README.md` - starter technical artifacts.
 
 ## String-Scale Assumptions
 

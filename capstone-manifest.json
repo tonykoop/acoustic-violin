@@ -31,9 +31,9 @@
   "engineering": {
     "wolfram": [
       {
-        "source_file": "wolfram-starter.wl",
+        "source_file": "acoustic-violin-starter.wl",
         "cloud_url": "",
-        "cloud_path": "wolfram-starter.wl",
+        "cloud_path": "acoustic-violin-starter.wl",
         "kind": "open-string-source-starter",
         "permission": "local"
       }
@@ -50,7 +50,7 @@
     "validation.csv",
     "supplier-rfq.md",
     "visual-bom-brief.md",
-    "wolfram-starter.wl",
+    "acoustic-violin-starter.wl",
     "photo-shotlist.md",
     "risks.md",
     "capstone-deck.md",
