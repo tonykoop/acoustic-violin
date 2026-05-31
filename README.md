@@ -24,7 +24,7 @@ prototype validation are not complete.
   design-sheet values before SolidWorks import.
 - `assembly-manual.md`, `risks.md`, `photo-shotlist.md` - build and review aids.
 - `drawing-brief.md`, `drawings/README.md`, `cad/README.md`,
-  `wolfram-starter.wl`, `wolfram/README.md` - starter technical artifacts.
+  `acoustic-violin-starter.wl`, `wolfram/README.md` - starter technical artifacts.
 - `cnc/README.md`, `images/README.md`, `data/README.md` - placeholder folders
   for future toolpaths, shop photos, and measured prototype data. Empty by
   design until a build is underway.

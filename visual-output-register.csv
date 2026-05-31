@@ -7,5 +7,5 @@ CUT-001,cut-list.csv,cut_list,cut_list,fabrication,acoustic-violin-design-table.
 MT-001,validation.csv,measurement_template,measurement_template,fabrication,,derived_from_authority,true,Validation gates: arching, graduation, neck-set, soundpost, setup.
 DRW-001,drawings/README.md,drawing,drawing_stub,pending_measurement,,placeholder,false,Drawing directory stub. No DXF/SVG yet.
 IMG-001,images/README.md,image,image_stub,concept_only,,no_dimension_claim,false,Image directory stub. Hero render not yet generated.
-WL-001,wolfram-starter.wl,wolfram_source,wolfram,derived_preview,,source_only,false,Wolfram source scaffold; source-only evidence at L2 until executed.
+WL-001,acoustic-violin-starter.wl,wolfram_source,wolfram,derived_preview,,source_only,false,Wolfram source scaffold; source-only evidence at L2 until executed.
 CAD-001,cad/acoustic-violin-placeholder.scad,cad_source,cad_authoring,pending_measurement,acoustic-violin-design-table.xlsx,scaffold_dimensions,false,Parametric OpenSCAD placeholder. Not fabrication authority until reviewed against measured template.
