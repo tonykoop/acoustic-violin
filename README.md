@@ -5,7 +5,7 @@ traditional construction reference and stave-built explorations.
 
 Part of the [tonykoop/instrument-maker](https://github.com/tonykoop/instrument-maker) catalogue.
 
-**Status: L2 V5 build-packet candidate**
+**Status:** L2 V5 build-packet candidate
 
 ## Readiness
 
@@ -25,6 +25,13 @@ prototype validation are not complete.
 - `assembly-manual.md`, `risks.md`, `photo-shotlist.md` - build and review aids.
 - `drawing-brief.md`, `drawings/README.md`, `cad/README.md`,
   `acoustic-violin-starter.wl`, `wolfram/README.md` - starter technical artifacts.
+- `cad/acoustic-violin.scad` - parametric OpenSCAD master (member-aware body
+  envelope; bowed-setup geometry flagged TBD_measurement). Authority
+  `pending_measurement`.
+- `wolfram/acoustic-violin-wolfram-model.wl` - Wolfram open-string tension model
+  source (source-only, not executed).
+- `evolution/` - StudioPipeline evolution-pipeline Stage 0 intake (design intent,
+  master manifest with hashes, revision register). Gate A not yet run.
 - `cnc/README.md`, `images/README.md`, `data/README.md` - placeholder folders
   for future toolpaths, shop photos, and measured prototype data. Empty by
   design until a build is underway.

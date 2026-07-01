@@ -1,0 +1,42 @@
+{
+  "product": "acoustic-violin",
+  "pipeline": "studiopipeline:evolution-pipeline",
+  "stage": "0-intake",
+  "master_revision": "rev-A (pre-commit intake, 2026-07-01)",
+  "generated": "2026-07-01",
+  "cad_masters": [
+    {
+      "path": "cad/acoustic-violin.scad",
+      "format": "openscad-source",
+      "sha256": "b09702d766462d00835893182115ee799be94479a08a48ce0d4707c3a834c62b",
+      "authority": "pending_measurement",
+      "lossy": false,
+      "notes": "Parametric master; member-aware violin body envelope. Bowed-setup geometry flagged TBD_measurement."
+    },
+    {
+      "path": "acoustic-violin-design-table.xlsx",
+      "format": "design-table",
+      "sha256": "1c5d534bb710743558036a3fc90acaca56bae73031bdaa25de53f48ad3e06ea3",
+      "authority": "fabrication",
+      "lossy": false,
+      "notes": "Workbook authority for parametric dimensions; family-spec.csv derived from it."
+    },
+    {
+      "path": "wolfram/acoustic-violin-wolfram-model.wl",
+      "format": "wolfram-source",
+      "sha256": "77605a52d192ab10e86abf83ab300a6874905b7c4bf73d3cdcf0d1dd54710fcf",
+      "authority": "derived_preview",
+      "lossy": false,
+      "notes": "Source-only (not executed); L2 evidence."
+    },
+    {
+      "path": "acoustic-violin-starter.wl",
+      "format": "wolfram-source",
+      "sha256": "1e894f03a8bed50613a1917578ef0e3231da459372000ad0d139943e39319680",
+      "authority": "derived_preview",
+      "lossy": false,
+      "notes": "Starter scaffold; source-only."
+    }
+  ],
+  "notes": "OpenSCAD source + design table are the current masters; no STEP export yet (SolidWorks STEP export is Windows-side work, out of scope for this intake pass). Gate A (Alpha workspace compile) not yet run. Bowed-setup dimensions remain measurement-gated."
+}
